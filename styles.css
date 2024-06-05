@@ -3,11 +3,20 @@ html {
 }
 
 body {
+  display: block;
   height: 100vh;
 }
 
-#content-container {
-  height: 100%;
+p {
+  font-size: 12px;
+}
+
+/* ul {
+  padding: 0;
+} */
+
+li {
+  margin: 0;
 }
 
 /* intro stylings */
@@ -84,29 +93,112 @@ h2.intro-item {
 #content-container {
   display: flex;
   flex-direction: row;
+  max-height: auto;
+  /* border: 1px solid red; */
 }
 
 #resume {
-  height: 100%;
-  width: auto;
-  border: 2px solid black;
-  flex: 3;
-  margin: 50px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  width: 100%;
+  /* border: 2px solid black; */
+  flex: 7;
+  padding: 50px;
+  /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1); */
 }
 
 #skillset {
-  flex: 1;
+  height: auto;
+  flex: 3;
   display: flex;
-  justify-content: center;
-  background-color: rgb(231, 197, 153);
+  flex-direction: column;
+  /* justify-content: center; */
+
+  background-color: rgb(0, 124, 48);
   /* background-color: tan; */
-  padding: 40px;
+  padding: 20px;
   border-left: 1px solid black;
 }
 
+#github-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.527), gray);
+  width: 200px;
+  height: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+#github-div:hover {
+  background: linear-gradient(to right, gray, rgba(171, 169, 169, 0.599));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#github-div:active {
+  box-shadow: none;
+  background: rgb(123, 200, 255);
+  border: 1px solid rgba(128, 128, 128, 0.527);
+}
+
+#github-div h1 {
+  margin-top: 12px;
+  color: white;
+}
+
+#github-div a {
+  text-decoration: none;
+}
+
+#github-link {
+  display: flex;
+}
+
+#big-github-logo {
+  height: 50px;
+  width: 50px;
+  /* margin-left: 20px; */
+}
+
+#tool-list li,
+#os-list li {
+  /* display: inline-block; */
+  list-style-type: square;
+}
+
+.stars {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.stars::before {
+  content: "★★★★★";
+  letter-spacing: 1px;
+  background: linear-gradient(
+    90deg,
+    #ffc107 calc(var(--rating) / 5 * 100%),
+    #e4e5e9 calc(var(--rating) / 5 * 100%)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tools {
+  /* border: 2px solid black; */
+  padding: 0;
+  margin-left: 5px;
+}
+
+.tools li {
+  display: inline-block;
+}
+
 .set-title {
-  text-decoration: underline;
+  width: 100%;
+  border-bottom: 2px solid black;
 }
 
 /* 
@@ -115,6 +207,7 @@ h2.intro-item {
 } */
 
 .section-title {
+  width: 100%;
   text-decoration: underline;
 }
 
@@ -137,7 +230,7 @@ ul {
   font-size: 12px;
 }
 
-section:not(:last-of-type) {
+#resume efsection:not(:last-of-type) {
   padding-bottom: 25px;
   border-bottom: 1px solid rgb(196, 196, 196);
 }

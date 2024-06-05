@@ -84,9 +84,27 @@
         </header>
         <!-- end intro section -->
 
+        <!-- summary -->
+        <section id="summary">
+          <div class="section-title">
+            <h2>Summary</h2>
+          </div>
+          <div class="summary-container">
+            <p>
+              A technical teamwork and communication specialist with a focus on
+              efficiency, learning, and growth. With ~2 years of coding
+              experience between freelance and bootcamp study, have learned
+              computer science fundamentals, great developer habits, built many
+              webpages and now study backend to create full stack applications,
+            </p>
+          </div>
+        </section>
+
         <!-- project/experience demonstration -->
         <section id="first">
-          <h2 class="section-title">Freelance Coding Experience</h2>
+          <div class="section-title">
+            <h2>Freelance Coding Experience</h2>
+          </div>
           <div class="experience-container">
             <h3>
               <a
@@ -128,29 +146,20 @@
             <p>
               My goal is to deploy this project and deliver a simplified online
               social experience, allowing users to focus on sharing inspirations
-              rather than managing commotion. The next stage of development
+              rather than sharing commotion. The next stage of development
               involves expanding profile functionality to enable users to like
               quotes, follow other users, and delete their own profiles.
               Additionally, I plan to enhance database interactions to store
               quotes by common authors, facilitating grouped viewing of these
-              quotes. Growing up in the social media age, I was a pre-teen
-              during the heyday of MySpace. By age 18, platforms like Twitter,
-              Instagram, and Facebook had become the central hubs of my peer
-              group's social interactions. As I approach the end of my 20s, I've
-              become aware of the negative externalities associated with the
-              social habits developed during this time. I believe that the
-              future of social media lies in simplicity and interactivity.
-              Drawing on my experience with marketing and sales funnels in my
-              20s, I aim to implement these concepts here, keeping the design
-              focused and meaningful.
+              quotes.
             </p>
           </div>
           <div class="experience-container">
             <h3>
               <a
-                href="https://github.com/skno27/ForumBuild"
+                href="https://github.com/skno27/snapMap"
                 class="project-link"
-                >Forum</a
+                >SnapMap</a
               >
               <span style="font-style: italic; font-size: small"
                 >(ongoing)</span
@@ -158,17 +167,35 @@
             </h3>
             <ul class="accomplishments">
               <li>
-                Here I have built an ExpressJS Backend for a web Forum. I used
-                the prisma Object Relational Mapper in order to facilitate the
-                following database interactions:
+                This application takes an upload of snapchat metadata packages
+                and renders them in an interface making them more consumable for
+                users to make use of their data outside of the main snapchat
+                application. User Login and Registration forms are configured to
+                send api requests to trigger the respective backend database
+                interactions. The experience pipeline will flow as such:
                 <ul>
-                  <li>Creating and Updating a User</li>
-                  <li></li>
+                  <li>Creating a User and Logging In</li>
+                  <li>Uploading Metadata</li>
+                  <li>Choosing What Collection to Render to the Interface</li>
                 </ul>
               </li>
-              <li></li>
-              <li></li>
             </ul>
+            <p>
+              This project will push me as a developer and require more
+              research. The metadata packages will contain some pretty high
+              resolution photos and videos. I am thinking of using AWS to store
+              this sensitive data in S3 buckets, then storing direction to those
+              resources in my database instead of trying to store actual files
+              as bit data. I am concerned that this may be a weakness in this
+              application, but it is the only method I can conceive of at the
+              moment and seems to be backed up by my research. Unfortunately,
+              there doesn't seem to be an Snapchat API that will allow users to
+              pull their metadata directly from the app, and I have to assume
+              that users will understand how to upload to the application.
+              Luckily, I am still building out that portion of the backend, I
+              think I can be less strict about validating uploads so that
+              whatever is uploaded is handled appropriately.
+            </p>
           </div>
         </section>
         <!-- end project/experience section -->
@@ -204,12 +231,28 @@
       <div
         id="skillset"
         class="wrapper">
+        <header id="skillset-header">
+          <div id="github-div">
+            <a
+              href="https://github.com/skno27"
+              id="github-link">
+              <img
+                src="/static/github-mark/github-mark-white.png"
+                alt="Big Github Logo. Linked"
+                id="big-github-logo" />
+              <h1>SKNO27</h1>
+            </a>
+          </div>
+        </header>
         <section>
-          <h2 class="set-title">Achievements</h2>
+          <div class="set-title">
+            <h2>Achievements</h2>
+          </div>
           <h3>Founded a Startup Music Production Company</h3>
           <p style="font-size: larger">
-            as the Lead Engineer, procuring financing and designing production
-            workflows around my technical and musical strengths.
+            Self-employed as a Fullstack Producer and Engineer, secured
+            financing and designed production workflows around my team's
+            technical and musical strengths.
           </p>
           <h3>
             Worked as Operations Manager at a Landscaping and Construction Labor
@@ -221,7 +264,103 @@
             repairs, which I personally performed.
           </p>
         </section>
+        <section>
+          <h2 class="set-title">Skills</h2>
+          <h3>
+            Core Language Tools
+            <p style="font-style: italic; font-size: xx-small">
+              (ranked with consideration as a junior, 5 stars being most
+              comfortable/proficient)
+            </p>
+          </h3>
+          <ul id="tool-list">
+            <li>
+              HTML & CSS<span
+                class="stars"
+                data-rating="4"></span>
+            </li>
+            <li>
+              Python<span
+                class="stars"
+                data-rating="5"></span>
+              <ul class="tools">
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Pygame</li>
+                <li>Tensorflow</li>
+              </ul>
+            </li>
+            <li>
+              Javascript<span
+                class="stars"
+                data-rating="4.8"></span>
+              <ul class="tools">
+                <li>Typescript</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>Canvas</li>
+                <li>jQuery</li>
+              </ul>
+            </li>
+            <li>
+              Golang<span
+                class="stars"
+                data-rating="2.4"></span>
+              <ul class="tools">
+                <li>Gin-Gonic</li>
+              </ul>
+            </li>
+          </ul>
+          <h3>Other Developer Technologies and CS Knowledge</h3>
+          <ul>
+            <li>Git</li>
+            <li>Bash</li>
+            <li>
+              IDEs
+              <ul class="tools">
+                <li>VS Code</li>
+                <li>PyCharm</li>
+              </ul>
+            </li>
+            <li>
+              Common Algorithms and Data Structures
+              <ul class="tools">
+                <li>Recursion</li>
+                <li>Searching</li>
+                <li>Sorting</li>
+                <li>Path Finding</li>
+                <li>Graphs</li>
+                <li>Heaps</li>
+                <li>Hashes</li>
+                <li>Stacks</li>
+                <li>Queues</li>
+              </ul>
+            </li>
+          </ul>
+          <h3>Operating Systems</h3>
+          <ul id="os-list">
+            <li>
+              Mac
+              <span style="font-style: italic; font-size: xx-small"
+                >(most proficient)</span
+              >
+            </li>
+            <li>Linux</li>
+            <li>
+              Windows<span style="font-style: italic; font-size: xx-small"
+                >(least proficient, not commonly used when coding)</span
+              >
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
+    <script>
+      <!-- star ranking script -->
+      document.querySelectorAll(".stars").forEach((star) => {
+        const rating = star.getAttribute("data-rating");
+        star.style.setProperty("--rating", rating);
+      });
+    </script>
   </body>
 </html>
