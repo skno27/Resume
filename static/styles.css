@@ -19,6 +19,16 @@ li {
   margin: 0;
 }
 
+.tools li {
+  display: inline-block;
+  margin: 0;
+}
+
+.tools li:not(:last-child) {
+  padding-right: 5px;
+  border-right: 1px solid black;
+}
+
 /* intro stylings */
 
 /* #intro {
