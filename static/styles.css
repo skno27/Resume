@@ -286,3 +286,19 @@ section {
 .golang {
   display: inline-flexbox;
 }
+
+@media (max-width: 800px) {
+  #content-container {
+    flex-direction: column;
+  }
+
+  #resume,
+  #skillset {
+    flex: 0;
+    max-width: 100%;
+  }
+  /* 
+  .education-container {
+    border: 2px solid red;
+  } */
+}
