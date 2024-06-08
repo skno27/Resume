@@ -104,11 +104,11 @@ h2.intro-item {
   display: flex;
   flex-direction: row;
   max-height: auto;
-  /* border: 1px solid red; */
+  /* border: 5px solid red; */
 }
 
 #resume {
-  height: 100vh;
+  height: auto;
   width: 100%;
   /* border: 2px solid black; */
   flex: 10;
