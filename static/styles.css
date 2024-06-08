@@ -288,6 +288,12 @@ section {
 }
 
 @media (max-width: 800px) {
+  .section-title {
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0 10px 0;
+  }
+
   #content-container {
     flex-direction: column;
   }
@@ -296,6 +302,28 @@ section {
   #skillset {
     flex: 0;
     max-width: 100%;
+  }
+
+  #resume {
+    background-color: black;
+    color: white;
+    padding: 0;
+  }
+
+  #resume section {
+    padding: 0 10px 0 10px;
+  }
+
+  .intro-bar {
+    padding: 0 10px 0 10px;
+  }
+
+  #intro {
+    margin-bottom: 30px;
+  }
+
+  .intro-bar.first {
+    border-bottom: 1px solid whitesmoke;
   }
 
   .education-container {
@@ -319,7 +347,21 @@ section {
     flex-direction: column;
   }
 
+  .classes.smaller-screen {
+    flex-direction: row;
+    border: 2px solid black;
+    justify-content: space-around;
+  }
+
   .classes li.course:not(.first-child) {
     margin-right: 0;
+  }
+
+  .course {
+    list-style-type: none;
+  }
+
+  .course:not(:first-child) {
+    margin-left: 10px;
   }
 }
