@@ -305,7 +305,7 @@ section {
   }
 
   #resume {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.535);
     color: white;
     padding: 0;
   }
@@ -349,7 +349,7 @@ section {
 
   .classes.smaller-screen {
     flex-direction: row;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     justify-content: space-around;
   }
 
@@ -363,5 +363,13 @@ section {
 
   .course:not(:first-child) {
     margin-left: 10px;
+  }
+
+  .project-link {
+    color: white;
+  }
+
+  .project-link:active {
+    color: gray;
   }
 }
